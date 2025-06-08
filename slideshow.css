@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+}
+h1{
+    margin-top: 50px;
+    margin-left: 510px;
+    font-size: 66px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+.slider-frame{
+    overflow: hidden;
+    height: 500px;
+    width: 800px;
+    margin-left: 364px;
+    margin-top: 20px;
+}
+@-webkit-keyframes slide_animation {
+  0% { left: 0px; }
+  16.6% { left: 0px; }
+  33.2% { left: 800px; }
+  49.8% { left: 1600px; }
+  66.4% { left: 2400px; }
+  83% { left: 3200px; }
+  100% { left: 4000px; }
+}
+.slide-images{
+    width: 4800px;
+    height: 500px;
+    margin: 0 0 0 -3200px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 45s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.img-container{
+    height: 500px;
+    width: 800px;
+    position: relative;
+    float: left;
+}
